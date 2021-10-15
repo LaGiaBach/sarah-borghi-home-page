@@ -115,7 +115,7 @@ a.button-link {
   gap: 0 20px;
 }
 .banner-1 {
-  background: url("./assets/content-img/img-top-content1.png") top center / cover
+  background: url("/../assets/content-img/img-top-content1.png") top center / cover
     no-repeat;
   height: 546px;
   width: 547px;
@@ -128,7 +128,7 @@ a.button-link {
   width: 319px;
 }
 .banner-2 {
-  background: url("./assets/content-img/img-top-content2.png") top center / cover
+  background: url("/../assets/content-img/img-top-content2.png") top center / cover
     no-repeat;
   height: 546px;
   width: 433px;
@@ -306,7 +306,7 @@ a.button-link {
 #footer {
 }
 .new-letters {
-  background: url("./assets/content-img/new-letter-background.png") top center /
+  background: url("/../assets/content-img/new-letter-background.png") top center /
     cover;
   width: 100%;
   height: 182px;
