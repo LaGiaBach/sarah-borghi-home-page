@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>   
+    <script src="./assets/js/main.js"></script>
     <title>Document</title>
 </head>
 
@@ -342,10 +346,56 @@
                     </div>
                     <p>P.IVA e C.F. 00306870205 - REA MN 128479 - CCIAA MN 00306870205</p>
                 </div>
+                <div class="new-letter-side-bar" id="pop-up-new-letter">
+                    <p class="new-letter-button" id="pop-up-button">
+                       <span>Ottieni uno sconto del 10%</span>
+                     </p>
+                   <div class="block-new-letter">
+                    <div class="block-new-letter-title">
+                        <h1>Ottieni uno sconto del 10%</h1>
+                        <p>Iscriviti alla nostra newsletter per ricevere le ultime tendenze, scoprire le novità ed essere aggiornato sulle nostre promozioni.</p>
+                    </div>
+                    <div class="block-new-letter-form">
+                        <form>
+                            <div class="input-form">
+                                <input type="text" name="" id="" class="input-text" placeholder="Inserisci email">
+                                <button class="submit" type="submit">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="" id="" class="input-radio">
+                                <span>Ho letto e accetto la Privacy Policy</span>
+                            </div>
+                            <div class="capcha-section">
+                                <div class="captcha">
+                                    <div class="spinner">
+                                        <label>
+                                            <input type="checkbox" onclick="$(this).attr('disabled','disabled');">
+                                            <span class="checkmark"><span>&nbsp;</span></span>
+                                        </label>
+                                    </div>
+                                    <div class="capcha-text">
+                                        Non suno un robot
+                                    </div>
+                                    <div class="logo-capcha">
+                                        <img src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/"/>
+                                        <p>reCAPTCHA</p>
+                                        <small>Privacy - Terms</small>
+                                    </div>
+                                </div>
+                            </div>   
+                        </form> 
+                    </div>
+               </div>
+               </div>
+             
+               </div>
             </div>
         </footer>
 
     </div>
+
 
 </body>
 
