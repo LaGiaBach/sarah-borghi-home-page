@@ -1,160 +1,218 @@
-.category-content{
-    margin: 20px 0 40px 0;
+@import "base.css";
+.category-content {
+  margin: 20px 0 40px 0;
 }
 .collant {
-    display: flex;
-    flex-direction: column;
-    justify-content: center ;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
-.collant h3{
-    text-align: center;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 27px;
+.collant h3 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
 }
-.collant .cate-img-list{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    gap: 0 34px 
+.collant .cate-img-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 34px;
 }
-.fillter > p{
-    padding:20px;
-    border-top: 1px solid #bfbfbf;
-    border-bottom: 1px solid #bfbfbf;
-    text-align: center;
-    line-height: 15px;
-    position: relative;
-    cursor: pointer;
+.fillter > p {
+  padding: 20px;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  text-align: center;
+  line-height: 15px;
+  position: relative;
+  cursor: pointer;
 }
-.fillter > p::after{
-    content:"";
-    background: url(https://demo4.up3up.net/www.sarahborghi.com/themes/SarahBorghi/assets/img/filter-plus.svg);
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
-    background-size: contain;
+.fillter > p::after {
+  content: "";
+  background: url(https://demo4.up3up.net/www.sarahborghi.com/themes/SarahBorghi/assets/img/filter-plus.svg);
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background-size: contain;
 }
-.fillter-dropdown{
-    max-width: 100% ;
-    height: 426px;
-    display: none;
-    position: relative;
+.fillter-dropdown {
+  max-width: 100%;
+  height: 426px;
+  display: none;
+  position: relative;
 }
-.button{
-    display: flex;
-    justify-content: center;
-    gap: 0 715px;
-    margin: 20px 0;
-    position: absolute;
-    z-index: 2;
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 0 715px;
+  margin: 20px 0;
+  position: absolute;
+  z-index: 2;
 }
-.close{
-    cursor: pointer;
+.close {
+  cursor: pointer;
 }
-.button button{
-    background: transparent;
-    border-radius: 22.5px;
-    box-shadow: none;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 15px;
-    letter-spacing: 0.2px;
-    width: 320px;
-    height: 45px;
-    border: solid 1px #262626;
-    position: relative;
-    top: 0px;
-
+.button button {
+  background: transparent;
+  border-radius: 22.5px;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0.2px;
+  width: 320px;
+  height: 45px;
+  border: solid 1px #262626;
+  position: relative;
+  top: 0px;
 }
-.button button:last-child{
-    width: 208px;
+.button button:last-child {
+  width: 208px;
 }
 .btn-dropdown {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;  
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
 }
 
-.btn-dropdown > p:first-child{
-    font-weight: 400
+.btn-dropdown > p:first-child {
+  font-weight: 400;
 }
-.btn-dropdown > p:last-child::after{
-    content:"";
-    background: url('../category-img/Stroke5.png');
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
-    background-size: contain;
+.btn-dropdown > p:last-child::after {
+  content: "";
+  background: url("../category-img/Stroke5.png");
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background-size: contain;
 }
-.fillter-btn-drop-down{
-    width: 300px;
-    margin-left: 10px;
-    margin-top: 66px;
-    display: none;
-    position: absolute;
-    z-index: 1;
-    
+.fillter-btn-drop-down {
+  width: 300px;
+  margin-left: 10px;
+  margin-top: 66px;
+  display: none;
+  position: absolute;
+  z-index: 1;
 }
 
-.fillter-btn-drop-down ul{
-    list-style: none;
-    width: 300px;
-    background: #f6f6f6;
-    background: #f6f6f6;
-    position: absolute;
-    
+.fillter-btn-drop-down ul {
+  list-style: none;
+  width: 300px;
+  background: #f6f6f6;
+  background: #f6f6f6;
+  position: absolute;
 }
-.fillter-btn-drop-down ul li{
-    font-weight: 300;
+.fillter-btn-drop-down ul li {
+  font-weight: 300;
 }
-.fillter-btn-drop-down ul li a{
-    display: block;
-    height:100%;
-    color: var(--primary-color);
-    padding:15px 15px;
+.fillter-btn-drop-down ul li a {
+  display: block;
+  height: 100%;
+  color: var(--primary-color);
+  padding: 15px 15px;
 }
 .fillter-btn-drop-down ul li a:hover {
-    background: #8B180C;
-    color: #fff;
+  background: #8b180c;
+  color: #fff;
 }
-.btn-dropdown-active{
-    display: block;
+.btn-dropdown-active {
+  display: block;
 }
 
-.search-fillter-control{
-    box-shadow: none;
-    display: grid;
-    grid-template-columns: 216px 216px 216px 216px 216px 216px;
-    width: 100%;
-    padding: 40px 13px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    height: 100px;
-    position: absolute;
-    top: 50px
-    
+.search-fillter-control {
+  box-shadow: none;
+  display: grid;
+  grid-template-columns: 216px 216px 216px 216px 216px 216px;
+  width: 100%;
+  padding: 40px 13px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: 100px;
+  position: absolute;
+  top: 50px;
 }
-.cate-radio-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px 0;
+.cate-radio-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px 0;
 }
-.radio-wrap{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px 0
+.radio-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px 0;
+}
+.radio-group {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
+.radio-group input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
-.radio-group{
+.checkmark {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  height: 25px;
+  width: 25px;
+  border-radius: 15px;
+  background-color: #eee;
+  border: 1px solid var(--primary-color);
+}
+.radio-group:hover input ~ .checkmark {
+  background-color: #ccc;
+  border: 1px solid var(--primary-color);
+}
+
+.radio-group input:checked ~ .checkmark {
+  background-color: white;
+  border: 1px solid #000;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-group input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-group .checkmark:after {
+  left: 18%;
+  top: 18%;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 15px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* custom radio btn css */
+/* .radio-group{
     display: block;
     position: relative;
     padding-left: 35px;
@@ -165,47 +223,23 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-.radio-group input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-.radio-group .radio-btb{
-    /* width: 30px;
-    height: 30px;*/
-}
-
-.checkmark{
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    height: 30px;
-    width: 30px;
-    background-color: #fff;
-    border-radius: 50%;
-    border: 1px solid;
-    z-index: 0;
- }
-
+} */
+/* 
 .radio-group:hover input ~ .checkmark {
     background-color: #ccc;
-}
-.radio-group input:checked ~ .checkmark {
+} */
+/* .radio-group input:checked ~ .checkmark {
     background-color: #262626;
-}
-.checkmark:after {
+} */
+/* .checkmark:after {
     content: "";
     position: absolute;
     display: none;
-}
-.radio-group input:checked ~ .checkmark:after {
+} */
+/* .radio-group input:checked ~ .checkmark:after {
     display: block;
-  }
-.radio-group .checkmark:after {
+} */
+/* .radio-group .checkmark:after {
     left: 11px;
     top: 6px;
     width: 5px;
@@ -215,55 +249,60 @@
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
-#Nero-25 ~ .checkmark{
-      background-color:#262626
+  } */
+#Nero-25 ~ .checkmark {
+  background-color: #262626;
 }
 
-#Nudo-18 ~ .checkmark{
-      background-color:#D3CBAE
-  }
-#Cipria-6 ~ .checkmark{
-    background-color:#CCB6A6
+#Nudo-18 ~ .checkmark {
+  background-color: #d3cbae;
 }
-#Castoro-12 ~ .checkmark{
-    background-color:#918880
+#Cipria-6 ~ .checkmark {
+  background-color: #ccb6a6;
 }
-#Blu-7 ~ .checkmark{
-    background-color:#062337
+#Castoro-12 ~ .checkmark {
+  background-color: #918880;
 }
-.button-submit{
- position: relative;
- top: 90%;
- left: 50%;
- transform: translateX(-50%);
- width: 320px;
+#Blu-7 ~ .checkmark {
+  background-color: #062337;
 }
-.ok{
-    width: 100%;
-    background-color: #262626;
-    color:#fff;
-    border: none;
-    border-radius:22.5px;
-    padding: 14px 0;
+/* .radio-group input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+} */
+.button-submit {
+  position: relative;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
 }
-.pagination{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-    
+.ok {
+  width: 100%;
+  background-color: #262626;
+  color: #fff;
+  border: none;
+  border-radius: 22.5px;
+  padding: 14px 0;
 }
-.pagination span a{
-    padding: 0 10px;
-    display: inline-block;
-    /* padding: 10px 10px; */
-    width: 20px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.pagination span:hover a{
-   border: 1px solid #000;
-   border-radius: 100px;
+.pagination span a {
+  padding: 0 10px;
+  display: inline-block;
+  /* padding: 10px 10px; */
+  width: 20px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+.pagination span:hover a {
+  border: 1px solid #000;
+  border-radius: 100px;
 }

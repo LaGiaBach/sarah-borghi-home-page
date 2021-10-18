@@ -1,5 +1,5 @@
 /* reset css */
-
+@import "base.css";
 /* general css */
 #main {
   font-family: var(--font-family);
@@ -12,7 +12,7 @@ a {
   color: var(--primary-color);
 }
 .container {
-  width: 1297px;
+  width: 1267px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -109,10 +109,10 @@ a.button-link {
 }
 .one-row-three-col {
   display: flex;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0 20px;
+  /* flex-wrap: wrap; */
 }
 .banner-1 {
   background: url("../content-img/img-top-content1.png") top center / cover
@@ -261,6 +261,7 @@ a.button-link {
   justify-content: space-between;
   align-items: center;
   gap: 0 20px;
+  flex-wrap: wrap;
 }
 .product-item {
   width: 300px;
@@ -310,11 +311,13 @@ a.button-link {
     cover;
   width: 100%;
   height: 182px;
+  color: white;
+}
+.new-letters .container-mobile{
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 0 30px;
-  color: white;
 }
 .blank {
   width: 30px;
@@ -362,7 +365,7 @@ a.button-link {
 /* capcha css */
 .capcha-section {
   background-color: rgba(255, 255, 255, 0.1);
-  width: 340px;
+  width: 200px;
 }
 .captcha {
   background-color: white;
@@ -370,28 +373,29 @@ a.button-link {
   justify-content: space-between;
   align-items: center;
   gap: 0 30px;
-  width: 340px;
+  width: 200px;
   padding: 0 10px;
 }
 
 @media screen and (max-width: 500px) {
   .captcha {
-    flex-direction: column;
+    /* flex-direction: column;  */
   }
-  .text {
+  
+  .capcha-text {
     margin: 0.5em !important;
     text-align: center;
   }
   .logo {
     align-self: center !important;
   }
-  .spinner {
+  .capcha > .spinner {
     margin: 2em 0.5em 0.5em 0.5em !important;
   }
 }
 
 .capcha-text {
-  font-size: 12px;
+  font-size: 9px;
   font-weight: 500;
   width: 115px;
   color: #000;
@@ -406,12 +410,12 @@ a.button-link {
   align-items: center;
   justify-content: center;
 }
-input[type="checkbox"] {
+.spinner input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   z-index: -1;
 }
-input[type="checkbox"] + .checkmark {
+.spinner input[type="checkbox"] + .checkmark {
   display: inline-block;
   width: 2em;
   height: 2em;
@@ -423,7 +427,7 @@ input[type="checkbox"] + .checkmark {
   align-items: center;
   cursor: pointer;
 }
-input[type="checkbox"] + .checkmark span {
+.spinner input[type="checkbox"] + .checkmark span {
   content: "";
   position: relative; /*
 	position:absolute;
@@ -436,7 +440,7 @@ input[type="checkbox"] + .checkmark span {
   height: 1.2em;
   opacity: 0;
 }
-input[type="checkbox"] + .checkmark > span:after {
+.spinner input[type="checkbox"] + .checkmark > span:after {
   content: "";
   position: absolute;
   display: block;
@@ -445,7 +449,7 @@ input[type="checkbox"] + .checkmark > span:after {
   left: 0;
   background-color: #029f56;
 }
-input[type="checkbox"] + .checkmark > span:before {
+.spinner input[type="checkbox"] + .checkmark > span:before {
   content: "";
   position: absolute;
   display: block;
@@ -454,16 +458,16 @@ input[type="checkbox"] + .checkmark > span:before {
   right: 0;
   background-color: #029f56;
 }
-input[type="checkbox"]:checked + .checkmark {
+.spinner input[type="checkbox"]:checked + .checkmark {
   animation: 2s spin forwards;
 }
-input[type="checkbox"]:checked + .checkmark > span {
+.spinner input[type="checkbox"]:checked + .checkmark > span {
   animation: 1s fadein 1.9s forwards;
 }
-input[type="checkbox"]:checked + .checkmark > span:after {
+.spinner input[type="checkbox"]:checked + .checkmark > span:after {
   animation: 0.3s bottomslide 2s forwards;
 }
-input[type="checkbox"]:checked + .checkmark > span:before {
+.spinner input[type="checkbox"]:checked + .checkmark > span:before {
   animation: 0.5s rightslide 2.2s forwards;
 }
 @keyframes fadein {
@@ -494,9 +498,11 @@ input[type="checkbox"]:checked + .checkmark > span:before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  height: 63px;
+  width: 22px;
   align-self: flex-end;
   margin: 0.5em 1em;
+  font-size: 9px;
 }
 .logo-capcha img {
   height: 20px;
@@ -505,7 +511,7 @@ input[type="checkbox"]:checked + .checkmark > span:before {
 .logo-capcha p {
   color: #9d9ba7;
   margin: 0;
-  font-size: 1em;
+  font-size: 6px;
   font-weight: 700;
   margin: 0.4em 0 0.2em 0;
 }

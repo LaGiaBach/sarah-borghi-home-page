@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/index-responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>   
+    <script src="https://kit.fontawesome.com/e8bdc79361.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/font/themify-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
     <title>Home</title>
 </head>
@@ -22,7 +27,7 @@
 <body>
     <div id="main">
 
-        <header id="header">
+        <header id="header" class="header-desktop">
             <div class="header-top-bar">
                 <p>Spedizione gratuita per gli ordini superiori a 29€</p>
             </div>
@@ -53,18 +58,41 @@
             </div>
 
         </header>
+        <header id="header-moblie" class="header-mobile">
+            <div class="mobile-top-bar">
+                <p>Spedizione gratuita per gli ordini superiori a 29€</p>
+            </div>
+            <div class="container-mobile">
+                <div class="nav-bar-mobile ">
+                    <div class="icon-nav-mobile">
+                        <img src="./assets/header-img/iconsearch.png" alt="">
+                        <img src="./assets/header-img/iconuser.png" alt="">
+                    </div>
+                    <div class="logo-mobile">
+                        <a href="index.html"><img srcset="./assets/header-img/logo.png 2x" alt="" class="logo-img"></a>
+                    </div>
+                    <div class="menu-cart-mobile">
+                        <img src="./assets/header-img/iconcard.png" alt="">
+                        <i class="ti-menu"></i>
+                    </div>
+                </div>
+            </div>
+
+        </header>
 
         <div id="content">
-            <div class="container">
+            <div class="container container-mobile">
                 <div class="collection one-row-three-col">
                     <div class="col-third text-box-description">
                         <div class="text-description">
                             <h1>Nuova Collezione
-                               <br> AI 21-22</h1>
+                                <br> AI 21-22
+                            </h1>
                             <p><strong>Dal 1976 Sarah</strong> Borghi interpreta in ogni collezione le tendenze più
                                 innovative della
                                 <strong>tradizione tessile</strong> coniugando qualità,
-                                <strong>innovazione</strong>, stile e <strong>Made in Italy</strong>.</p>
+                                <strong>innovazione</strong>, stile e <strong>Made in Italy</strong>.
+                            </p>
                         </div>
                     </div>
                     <div class="col-third banner-1">
@@ -80,19 +108,45 @@
                         </div>
                     </div>
                 </div>
+                <div class="collection-mobile">
+                    <h1>Nuova Collezione<br>
+                        AI 21-22</h1>
+                    <div class="slder-mobile">
+                        <div class="slider">
+                            <div class="banner-1">
+                                <div class="text-box">
+                                    <h3>Collezione Donna</h3>
+                                    <a href="#" class="button-link">scopri i modelli</a>
+                                </div>
+                            </div>
+                            <div class="banner-2">
+                                <div class="text-box">
+                                    <h3>Collezione Donna</h3>
+                                    <a href="#" class="button-link">scopri i modelli</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-mobile-slider">
+                            <button class="btn-slider-mobile prev-slide"></button>
+                            <button class="btn-slider-mobile prev-slide"></button>
+                        </div>
+                    </div>
+
+                </div>
                 <div class="icon-box-section">
                     <div class="icon-box-list">
                         <div class="icon-box box-1">
                             <img src="./assets/content-img/icon-1.png" alt="" class="icon">
                             <p>Spedizione Gratuita
-                               <br> per ordini superiori a 29€</p>
+                                <br> per ordini superiori a 29€
+                            </p>
                         </div>
                         <div class="icon-box box-2">
                             <img src="./assets/content-img/icon-2.png" alt="" class="icon">
                             <p>Reso facile e gratuito <br>
                                 entro 15 giorni</p>
                         </div>
-                            
+
                         <div class="icon-box box-3">
                             <img src="./assets/content-img/icon-3.png" alt="" class="icon">
                             <p>Potrai pagare con PayPal, Carte <br>
@@ -111,15 +165,17 @@
                             <img src="./assets/content-img/img-grid-left.jpg" alt="" class="grid-layout-img">
                             <div class="text-box-description">
                                 <h1>Calze Lunghe<br> Uomo</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor
+                                    incididunt ut labore et</p>
                                 <a href="#" class="button-link">scopri i modelli</a>
                             </div>
                         </div>
                         <div class="grid-layout-column">
                             <img src="./assets/content-img/img-grid-right.jpg" alt="" class="grid-layout-img">
-                            <div class="text-box-description">      
+                            <div class="text-box-description">
                                 <h1>Collant <br> Modellanti</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor
+                                    incididunt ut labore et</p>
                                 <a href="#" class="button-link">scopri i modelli</a>
                             </div>
                         </div>
@@ -235,15 +291,17 @@
                             <img src="./assets/content-img/grid-bottom-left.png" alt="" class="grid-layout-img">
                             <div class="text-box-description">
                                 <h1>Calzini Donna</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor
+                                    incididunt ut labore et</p>
                                 <a href="#" class="button-link">scopri i modelli</a>
                             </div>
                         </div>
                         <div class="grid-layout-column">
                             <img src="./assets/content-img/grid-bottom-right.png" alt="" class="grid-layout-img">
-                            <div class="text-box-description">      
+                            <div class="text-box-description">
                                 <h1>Collezione <br> Green</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor
+                                    incididunt ut labore et</p>
                                 <a href="#" class="button-link">scopri i modelli</a>
                             </div>
                         </div>
@@ -254,51 +312,53 @@
 
         <footer id="footer">
             <div class="new-letters">
-                <div class="blank"></div>
-                <div class="new-letter-content">
-                    <div class="text">
-                        <h1>Ottieni uno sconto del 10% </h1>
-                        <p>Iscriviti alla nostra newsletter per ricevere le ultime tendenze, scoprire le novità 
-                            ed essere aggiornato sulle nostre promozioni.</p>
-                    </div>
-                </div>
-                <div class="new-letter-form">
-                    <form>
-                        <div class="input-form">
-                            <input type="text" name="" id="" class="input-text" placeholder="Inserisci email">
-                            <button class="submit" type="submit">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
+                <div class="container-mobile">
+                    <div class="blank"></div>
+                    <div class="new-letter-content">
+                        <div class="text">
+                            <h1>Ottieni uno sconto del 10% </h1>
+                            <p>Iscriviti alla nostra newsletter per ricevere le ultime tendenze, scoprire le novità
+                                ed essere aggiornato sulle nostre promozioni.</p>
                         </div>
-                        <div class="radio">
-                            <input type="radio" name="" id="" class="input-radio">
-                            <span>Ho letto e accetto la Privacy Policy</span>
-                         </div>
-                         <div class="capcha-section">
-                            <div class="captcha">
-                                <div class="spinner">
-                                    <label>
-                                        <input type="checkbox" onclick="$(this).attr('disabled','disabled');">
-                                        <span class="checkmark"><span>&nbsp;</span></span>
-                                    </label>
-                                </div>
-                                <div class="capcha-text">
-                                    Non suno un robot
-                                </div>
-                                <div class="logo-capcha">
-                                    <img src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/"/>
-                                    <p>reCAPTCHA</p>
-                                    <small>Privacy - Terms</small>
+                    </div>
+                    <div class="new-letter-form">
+                        <form>
+                            <div class="input-form">
+                                <input type="text" name="" id="" class="input-text" placeholder="Inserisci email">
+                                <button class="submit" type="submit">
+                                    <i class="ti-arrow-right"></i>
+                                </button>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="" id="" class="input-radio">
+                                <span>Ho letto e accetto la Privacy Policy</span>
+                            </div>
+                            <div class="capcha-section">
+                                <div class="captcha">
+                                    <div class="spinner">
+                                        <label>
+                                            <input type="checkbox" onclick="$(this).attr('disabled','disabled');">
+                                            <span class="checkmark"><span>&nbsp;</span></span>
+                                        </label>
+                                    </div>
+                                    <div class="capcha-text">
+                                        Non suno un robot
+                                    </div>
+                                    <div class="logo-capcha">
+                                        <img src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/" />
+                                        <p>reCAPTCHA</p>
+                                        <small>Privacy - Terms</small>
+                                    </div>
                                 </div>
                             </div>
-                        </div>   
-                    </form> 
+                        </form>
 
+                    </div>
                 </div>
-               
+
             </div>
             <div class="footer-info">
-                <div class="container">
+                <div class="container container-mobile">
                     <div class="footer-wrapper">
                         <div class="footer-widget">
                             <ul class="contact">
@@ -318,6 +378,9 @@
                                 <li>Metodi di pagamento</li>
                                 <li>Cambi e resi</li>
                                 <li>Privacy & Cookie Policy</li>
+                                <li><i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                </li>
                             </ul>
                         </div>
                         <div class="footer-widget">
@@ -333,8 +396,8 @@
                         <div class="footer-widget">
                             <p class="payment-heading">Potrai pagare con</p>
                             <div class="payment">
-                                
-                                
+
+
                                 <img src="./assets/footer-img/paypal.png" alt="" class="payment-menthod">
                                 <img src="./assets/footer-img/postepay.png" alt="" class="payment-menthod">
                                 <img src="./assets/footer-img/visa.png" alt="" class="payment-menthod">
@@ -347,51 +410,78 @@
                     <p>P.IVA e C.F. 00306870205 - REA MN 128479 - CCIAA MN 00306870205</p>
                 </div>
                 <div class="new-letter-side-bar" id="pop-up-new-letter">
-                     <p class="new-letter-button" id="pop-up-button">
-                       <span>Ottieni uno sconto del 10%</span>
-                     </p>
+                    <p class="new-letter-button" id="pop-up-button">
+                        <span>Ottieni uno sconto del 10%</span>
+                    </p>
                     <div class="block-new-letter">
-                    <div class="block-new-letter-title">
-                        <h1>Ottieni uno sconto del 10%</h1>
-                        <p>Iscriviti alla nostra newsletter per ricevere le ultime tendenze, scoprire le novità ed essere aggiornato sulle nostre promozioni.</p>
-                    </div>
-                    <div class="block-new-letter-form">
-                        <form>
-                            <div class="input-form">
-                                <input type="text" name="" id="" class="input-text" placeholder="Inserisci email">
-                                <button class="submit" type="submit">
-                                    <i class="fas fa-arrow-right"></i>
-                                </button>
-                            </div>
-                            <div class="radio">
-                                <input type="radio" name="" id="" class="input-radio">
-                                <span>Ho letto e accetto la Privacy Policy</span>
-                            </div>
-                            <div class="capcha-section">
-                                <div class="captcha">
-                                    <div class="spinner">
-                                        <label>
-                                            <input type="checkbox" onclick="$(this).attr('disabled','disabled');">
-                                            <span class="checkmark"><span>&nbsp;</span></span>
-                                        </label>
-                                    </div>
-                                    <div class="capcha-text">
-                                        Non suno un robot
-                                    </div>
-                                    <div class="logo-capcha">
-                                        <img src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/"/>
-                                        <p>reCAPTCHA</p>
-                                        <small>Privacy - Terms</small>
+                        <div class="block-new-letter-title">
+                            <h1>Ottieni uno sconto del 10%</h1>
+                            <p>Iscriviti alla nostra newsletter per ricevere le ultime tendenze, scoprire le novità ed
+                                essere aggiornato sulle nostre promozioni.</p>
+                        </div>
+                        <div class="block-new-letter-form">
+                            <form>
+                                <div class="input-form">
+                                    <input type="text" name="" id="" class="input-text" placeholder="Inserisci email">
+                                    <button class="submit" type="submit">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="" id="" class="input-radio">
+                                    <span>Ho letto e accetto la Privacy Policy</span>
+                                </div>
+                                <div class="capcha-section">
+                                    <div class="captcha">
+                                        <div class="spinner">
+                                            <label>
+                                                <input type="checkbox" onclick="$(this).attr('disabled','disabled');">
+                                                <span class="checkmark"><span>&nbsp;</span></span>
+                                            </label>
+                                        </div>
+                                        <div class="capcha-text">
+                                            Non suno un robot
+                                        </div>
+                                        <div class="logo-capcha">
+                                            <img src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/" />
+                                            <p>reCAPTCHA</p>
+                                            <small>Privacy - Terms</small>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>   
-                        </form> 
-                    </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-             
+
             </div>
-        
+            <!-- <div class="footer-info-mobile">
+                <div class="payment-info">
+                    <div class="payment-wrapper">
+                        <p class="payment-heading">Potrai pagare con</p>
+                        <div class="payment">
+                            <img src="./assets/footer-img/paypal.png" alt="" class="payment-menthod">
+                            <img src="./assets/footer-img/postepay.png" alt="" class="payment-menthod">
+                            <img src="./assets/footer-img/visa.png" alt="" class="payment-menthod">
+                            <img src="./assets/footer-img/maestro.png" alt="" class="payment-menthod">
+                            <img src="./assets/footer-img/mastercard.png" alt="" class="payment-menthod">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="contract-info">
+                    <ul class="contact">
+                        <li>Gizeta Calze S.r.l. </li>
+                        <li>Via Francia, 7/9 - 46042 Castel Goffredo (MN)</li>
+                        <li>info@sarahborghi.com</li>
+                        <li>Tel: +39 0376 77421</li>
+                        <li><i class="fab fa-facebook"></i>
+                            <i class="fab fa-instagram"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+
         </footer>
 
     </div>

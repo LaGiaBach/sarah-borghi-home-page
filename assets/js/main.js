@@ -26,5 +26,7 @@ $(window).ready(function() {
    closeBtn.click(function() {
     fillteBlock.slideUp("slow", function() {})
    })
+   // reset css mobile container
+   
 })
 
