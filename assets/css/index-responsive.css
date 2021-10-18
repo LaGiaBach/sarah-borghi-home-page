@@ -85,9 +85,7 @@
   .icon-box:nth-child(3) {
     display: none;
   }
-  .new-letter-side-bar {
-    display: none;
-  }
+
   .slder-mobile {
     /* display: flex;
         justify-content:center;
@@ -240,8 +238,8 @@
   .info1 li:first-child {
     display: none;
   }
-  .footer-info{
-      position: relative;
+  .footer-info {
+    position: relative;
   }
   .footer-widget {
     line-height: 10px;
@@ -255,4 +253,36 @@
   .footer-info > .container > p {
     font-size: 13px;
   }
+  /* newletter-side-bar css */
+  .new-letter-side-bar {
+    /* display: none; */
+  }
+  .new-letter-side-bar{
+    position: fixed;
+    left: 0;
+    top: unset;
+    display: flex;
+    flex-direction: column;
+    bottom: -360px;
+    right: 0;
+  }
+  .new-letter-button{
+    
+        min-width: max-content;
+        width: auto;
+        min-height: unset;
+        padding: 0 15px;
+        max-width: 35px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 15px;
+    
+  }
+  .new-letter-button span{
+    position: static;
+    transform: unset;
+    line-height: 40px;
+  }
+  .new-letter-side-bar.active {
+    bottom: 0;
+}
 }
