@@ -318,6 +318,7 @@
   right: 0;
   z-index: 999;
   display: none;
+ 
 }
 .fillter-drop-down-mobile-wrapper {
   /* display: flex;
@@ -362,4 +363,7 @@
   display: inline-block;
   background-size: 12px;
   margin-left: 3px;
+}
+.sub-menu{
+  display: block
 }

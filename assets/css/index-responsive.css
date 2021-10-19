@@ -110,6 +110,9 @@
   .btn-mobile-slider {
     text-align: center;
   }
+  .btn-mobile-slider button:first-child{
+    background-color: black;
+  }
   .btn-slider-mobile {
     padding: 5px 38px;
     border: 1px solid var(--primary-color);

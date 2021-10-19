@@ -25,6 +25,10 @@ $(window).ready(function() {
  closeBtn.click(function() {
   fillteBlock.slideUp("slow", function() {})
  })
- // reset css mobile container
- 
+ var btnDropDownMenu = $('.main-menu-drop-down');
+ var subMenuBlock = $('.sub-menu');
+ btnDropDownMenu.click(function(){
+   console.log(Math.random());
+  subMenuBlock.slideToggle("slow", function() {})
+ })
 })
