@@ -265,6 +265,8 @@ a.button-link {
 }
 .product-item {
   width: 300px;
+  display: flex;
+  flex-direction: column;
 }
 .product-img {
   width: 100%;
@@ -380,6 +382,7 @@ a.button-link {
 @media screen and (max-width: 500px) {
   .captcha {
     /* flex-direction: column;  */
+    width: 100%;
   }
   
   .capcha-text {

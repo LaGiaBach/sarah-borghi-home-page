@@ -1,32 +1,30 @@
-
 $(window).ready(function() {
-    // home page js
-   const popupNewletter = $('#pop-up-new-letter');
-   const popupBtn = $('#pop-up-button');
-   popupBtn.click(function() {
-    popupNewletter.toggleClass('active');
-   })
-   // category
+  // home page js
+ var popupNewletter = $('#pop-up-new-letter');
+ var popupBtn = $('#pop-up-button');
+ popupBtn.click(function() {
+  popupNewletter.toggleClass('active');
+ })
+ // category
 
-   const dropDownBtn = $('#dropdown');
-   const dropDownBlock = $('#btn-dropdown-block');
-   dropDownBtn.click(function() {
-    dropDownBlock.toggleClass('btn-dropdown-active');
-   })
+ var dropDownBtn = $('#dropdown');
+ var dropDownBlock = $('#btn-dropdown-block');
+ dropDownBtn.click(function() {
+  dropDownBlock.toggleClass('btn-dropdown-active');
+ })
 
-   //filter dropdown
-   const fillterBtnDropdown = $('#fillter-btn-dropdown');
-   const fillteBlock = $('#fillter-drop-down-block');
-   const closeBtn = $('.close');
-   fillterBtnDropdown.click(function() {
-    fillteBlock.slideToggle("slow", function() {
+ //filter dropdown
+ var fillterBtnDropdown = $('#fillter-btn-dropdown');
+ var fillteBlock = $('#fillter-drop-down-block');
+ var closeBtn = $('.close');
+ fillterBtnDropdown.click(function() {
+  fillteBlock.slideToggle("slow", function() {
 
-    })
-   })
-   closeBtn.click(function() {
-    fillteBlock.slideUp("slow", function() {})
-   })
-   // reset css mobile container
-   
+  })
+ })
+ closeBtn.click(function() {
+  fillteBlock.slideUp("slow", function() {})
+ })
+ // reset css mobile container
+ 
 })
-

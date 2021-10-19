@@ -21,13 +21,20 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
     <title>Home</title>
 </head>
 
 <body>
     <div id="main">
+        <div id="header"></div>
 
-        <header id="header" class="header-desktop">
+        <!-- <header id="header" class="header-desktop">
             <div class="header-top-bar">
                 <p>Spedizione gratuita per gli ordini superiori a 29€</p>
             </div>
@@ -78,7 +85,7 @@
                 </div>
             </div>
 
-        </header>
+        </header> -->
 
         <div id="content">
             <div class="container container-mobile">
@@ -284,6 +291,14 @@
                             </div>
                         </div>
                     </div>
+                    <div class="btn-slide-mobile">
+                        <button class="prev-btn">
+                            <img src="./assets/mobile-only/prev-btn.png" alt="">
+                        </button>
+                        <button class="next-btn">
+                            <img src="./assets/mobile-only/next-btn.png" alt="">
+                        </button>
+                    </div>
                 </div>
                 <div class="grid-layout">
                     <div class="grid-layout-two-column-container">
@@ -310,7 +325,9 @@
             </div>
         </div>
 
-        <footer id="footer">
+        <div id="footer"></div>
+
+        <!-- <footer id="footer">
             <div class="new-letters">
                 <div class="container-mobile">
                     <div class="blank"></div>
@@ -455,34 +472,9 @@
                 </div>
 
             </div>
-            <!-- <div class="footer-info-mobile">
-                <div class="payment-info">
-                    <div class="payment-wrapper">
-                        <p class="payment-heading">Potrai pagare con</p>
-                        <div class="payment">
-                            <img src="./assets/footer-img/paypal.png" alt="" class="payment-menthod">
-                            <img src="./assets/footer-img/postepay.png" alt="" class="payment-menthod">
-                            <img src="./assets/footer-img/visa.png" alt="" class="payment-menthod">
-                            <img src="./assets/footer-img/maestro.png" alt="" class="payment-menthod">
-                            <img src="./assets/footer-img/mastercard.png" alt="" class="payment-menthod">
+            
 
-                        </div>
-                    </div>
-                </div>
-                <div class="contract-info">
-                    <ul class="contact">
-                        <li>Gizeta Calze S.r.l. </li>
-                        <li>Via Francia, 7/9 - 46042 Castel Goffredo (MN)</li>
-                        <li>info@sarahborghi.com</li>
-                        <li>Tel: +39 0376 77421</li>
-                        <li><i class="fab fa-facebook"></i>
-                            <i class="fab fa-instagram"></i>
-                        </li>
-                    </ul>
-                </div>
-            </div> -->
-
-        </footer>
+        </footer> -->
 
     </div>
 

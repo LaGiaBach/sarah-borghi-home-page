@@ -1,8 +1,8 @@
 /*desktop CSS responsive*/
 @import "base.css";
 @import "style.css";
-@media screen and (min-width: 1204px) {
-  .header-mobile {
+@media screen and (min-width: 730px) {
+  #header .header-mobile {
     display: none;
   }
   .collection-mobile {
@@ -17,6 +17,10 @@
   .info1 li:last-child {
     display: none;
   }
+  .btn-slide-mobile {
+    display: none;
+  }
+ 
   /* .footer-info-mobile{
       display: none;
   } */
@@ -142,11 +146,31 @@
   }
   .product-list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    /* gap: 0 20px; */
+    flex-wrap: nowrap;
     gap: 20px 0;
-    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 10px 0;
+  }
+  /* .product-list{
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+      height: 100%; 
+      overflow: hidden;
+      width: 1440px;
+      height: 474px; 
+      
+  } */
+  .product-item {
+    width: 100%;
+    min-width: 100%;
+    /* test */
+    /* float: left;
+    width: 360px;
+    height: 474px; */
   }
   .new-letters {
     height: 320px;
@@ -168,9 +192,7 @@
     font-weight: 700;
     line-height: 24px;
   }
-  .product-item {
-    width: 100%;
-  }
+
   /* .capcha .text {
     text-align: left;
   } */
@@ -192,6 +214,9 @@
     position: absolute;
     top: 4px;
     left: 100%;
+  }
+  .capcha {
+    width: 100%;
   }
   .capcha-section {
     width: 270px;
@@ -257,7 +282,7 @@
   .new-letter-side-bar {
     /* display: none; */
   }
-  .new-letter-side-bar{
+  .new-letter-side-bar {
     position: fixed;
     left: 0;
     top: unset;
@@ -266,23 +291,45 @@
     bottom: -360px;
     right: 0;
   }
-  .new-letter-button{
-    
-        min-width: max-content;
-        width: auto;
-        min-height: unset;
-        padding: 0 15px;
-        max-width: 35px;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 15px;
-    
+  .new-letter-button {
+    min-width: max-content;
+    width: auto;
+    min-height: unset;
+    padding: 0 15px;
+    max-width: 35px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
   }
-  .new-letter-button span{
+  .new-letter-button span {
     position: static;
     transform: unset;
     line-height: 40px;
   }
   .new-letter-side-bar.active {
     bottom: 0;
-}
+  }
+  .best-saler {
+    width: 100%;
+    position: relative;
+  }
+  .btn-slide-mobile {
+    display: block;
+  }
+  .btn-slide-mobile button {
+    background: transparent;
+    border: none;
+    position: absolute;
+  }
+  .btn-slide-mobile button:first-child {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .btn-slide-mobile button:last-child {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  /* Category-responsive */
+  
 }

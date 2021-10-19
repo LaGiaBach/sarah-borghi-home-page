@@ -1,0 +1,28 @@
+@media screen and (max-width: 720px) {
+.collant .cate-img-list{
+    gap: 0 0;
+  }
+  .category-content .product-item{
+    width: 169px;
+    height:290px;
+    min-width: 0;
+  }
+  .category-content .product-item > img{
+    width: 169px;
+    
+  }
+  .category-content .product-list{
+    flex-wrap: wrap;
+    gap: 20px 15px;
+  }
+  #best-seller .product-sumary{
+    width: 169px;
+    justify-content:flex-start;
+    gap: 0 0
+  }
+  .category-content > .container-mobile > .best-seller > .product-list > .product-sumary > img{
+    width: 20px;
+    height: 20px;
+  }
+
+}
