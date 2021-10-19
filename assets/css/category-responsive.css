@@ -24,6 +24,7 @@
     flex-wrap: wrap;
     gap: 30px 30px;
     padding: 10px;
+    justify-content: center;
   }
   .product-summary {
     width: 169px;
@@ -43,6 +44,25 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  #best-saler .product-description {
+    font-size: 13px;
+  }
+  #best-saler .product-description .product-title{
+    /* line-height: 1.5em;
+    height: 3em;     
+    overflow: hidden; */
+  }
+  #best-saler .product-description .product-title{
+    display: inline;
+    order: 1;
+  }
+  #best-saler .product-description .product-quantity{
+    font-size:10px;
+    order: 2;
+  }
+  #best-saler .product-description .product-price{
+    order: 3;
   }
   .category-content
     > .container-mobile

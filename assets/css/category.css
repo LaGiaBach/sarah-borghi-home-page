@@ -283,6 +283,11 @@
 .best-saler-category{
   display: block;
 }
+.product-title{
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px
+}
 .ok {
   width: 100%;
   background-color: #262626;
