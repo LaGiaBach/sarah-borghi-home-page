@@ -312,6 +312,9 @@ a.button-link {
   align-items: center;
   gap: 10px;
 }
+.product-card img{
+  width: 100%;
+}
 /* footer css */
 #footer {
 }

@@ -22,9 +22,8 @@
   }
   .category-content .product-list {
     flex-wrap: wrap;
-    gap: 30px 30px;
-    padding: 10px;
-    justify-content: center;
+    gap: 30px 0px;
+    justify-content: space-evenly;
   }
   .product-summary {
     width: 169px;
@@ -32,6 +31,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+      gap:50px 0
     
   }
   #best-saler .product-card {
@@ -64,6 +64,7 @@
   #best-saler .product-description .product-price{
     order: 3;
   }
+  
   .category-content
     > .container-mobile
     > .best-seller
