@@ -31,3 +31,24 @@
     display: flex;
     flex-wrap: wrap;
 }
+.page-title{
+    color: #999999;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 10px;
+}
+h1{
+    font-weight: 400;
+  }
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  .container {
+    width: 1267px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+

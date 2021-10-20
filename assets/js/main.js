@@ -18,8 +18,15 @@
   var closeBtn = $(".close");
   fillterBtnDropdown.click(function () {
     fillteBlock.slideToggle("slow", function () {});
+    fillterBtnDropdown.toggleClass("active")
   });
   closeBtn.click(function () {
     fillteBlock.slideUp("slow", function () {});
   });
-  // reset css mobile container
+  // status bar prodottom 
+  var mainNavTab = $(".main-nav-tabs");
+  var subNavTab = $(".sub-nav-tabs");
+  mainNavTab.click(function(){
+    subNavTab.slideToggle("slow", function(){})
+    mainNavTab.toggleClass("active")
+  })
