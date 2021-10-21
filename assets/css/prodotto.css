@@ -157,6 +157,22 @@
 .prodotto-add-to-cart-info-select {
   margin: 10px 0;
 }
+/* .prodotto-add-to-cart-info-select span:last-child::after{
+  content: "";
+  background: url(../prodotto-img/Line.png) no-repeat;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background-size: 12px;
+  position:absolute
+
+} */
+.line{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .prodotto-add-to-cart-info-select span {
   display: inline-block;
   width: 66.67px;
@@ -167,6 +183,7 @@
   text-align: center;
   line-height: 40px;
   cursor: pointer;
+  position: relative;
 }
 .prodotto-add-to-cart-info-select span:last-child {
   background: transparent;
@@ -302,6 +319,42 @@ span.add-to-cart-asc .plus {
   margin-top: 10px;
   text-align: left;
 }
+.composizi {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+.composizi-icon {
+  display: flex;
+}
+.composizi-icon span {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--primary-color);
+  position: relative;
+  margin-right: 10px;
+}
+.composizi-icon span:hover {
+  border-bottom: 3px solid var(--primary-color);
+}
+.composizi-icon span img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+table {
+  border-spacing: 0;
+}
+th,
+td {
+  padding: 15px;
+  color: var(--primary-color);
+}
+tbody tr:nth-child(odd) {
+  background-color: #eeee;
+  color: #fff;
+}
 @import "base.css";
 @import "style.css";
 @media screen and (max-width: 720px) {
@@ -310,11 +363,20 @@ span.add-to-cart-asc .plus {
     gap: 0;
     margin-top: 10px;
   }
+  .prodotto-sub-title {
+    width: 100%;
+    font-size: 13px;
+  }
+  .prodotto-add-to-cart-info-button {
+    display: flex;
+  }
   .prodotto-img {
     gap: 0;
     justify-content: flex-start;
-    width: 100%;
+    width: auto;
     height: auto;
+    
+
   }
   .next-btn-prodotto,
   .zoom-in {
@@ -392,4 +454,13 @@ span.add-to-cart-asc .plus {
     width: 20px;
     height: 20px;
   }
+  .add-to-cart-info-btn{
+    width: auto;
+    flex-basis: 70%;
+  }
+  span.add-to-cart-asc{
+    width: auto;
+    flex-basis:30%
+  }
+ 
 }

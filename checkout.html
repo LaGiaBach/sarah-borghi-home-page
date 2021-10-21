@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/checkout.css">
+    <link rel="stylesheet" href="./assets/css/index-responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e8bdc79361.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/font/themify-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <title>Carrello</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header"></div>
+
+        <div class="checkout-content">
+            <div class="container container-mobile">
+                <div class="page-title">
+                    <p>Home Page > Carrello</p>
+                </div>
+                <div class="checkout-title">
+                    <h1>Carrello</h1>
+                </div>
+                <div class="checkout-shipping-item">
+                    <img src="./assets/content-img/icon-1.png" alt="">
+                    <p>Ti mancano 0€ per la SPEDIZIONE GRATUITA</p>
+                </div>
+                <div class="checkout-content-wrapper">
+                    <div class="checkout-wrapper">
+                        <div class="checkout-product-list">
+                            <div class="checkout-product-item">
+                                <div class="checkout-product-desc">
+                                    <div class="checkout-product-img">
+                                        <img src="./assets/checkout-img/vel-20-collant copy.jpg" alt="">
+                                    </div>
+                                    <div class="checkout-product-sumary">
+                                        <div class="checkout-product-tilte">
+                                            <p>Collant Basic Velati</p>
+                                            <p>20 Denari</p>
+                                            <p class="checkout-color">Colore: Nero</p>
+                                            <p class="checkout-taliga">
+                                                Taglia: 3
+                                            </p>
+                                        </div>
+                                        <div class="product-price">
+                                            <p class="cost">12,60 €</p>
+                                            <p class="sale-percent">-12%</p>
+                                            <p class="sale-price">10,99 €</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkout-checkout">
+                                    <div class="checkout-product-quantity">
+                                        <span class="add-to-cart-asc">
+                                            <i class="ti-minus minus"></i>
+                                            <p>2</p>
+                                            <i class="ti-plus plus"></i>
+                                        </span>
+                                    </div>
+                                    <div class="checkout-total-price">
+                                        <p class="sale-price"><strong>21,98 €</strong></p>
+                                    </div>
+
+                                </div>
+                                <div class="checkout-delete-product">
+                                    <img src="./assets/checkout-img/trash.png" alt="">
+                                </div>
+                            </div>
+                            <div class="checkout-product-item">
+                                <div class="checkout-product-desc">
+                                    <div class="checkout-product-img">
+                                        <img src="./assets/checkout-img/pin-up-collant copy.jpg" alt="">
+                                    </div>
+                                    <div class="checkout-product-sumary">
+                                        <div class="checkout-product-tilte">
+                                            <p>Collant Modellanti </p>
+                                            <p>Pin Up</p>
+                                            <p class="checkout-color">Colore: Nero</p>
+                                            <p class="checkout-taliga">
+                                                Taglia: 3
+                                            </p>
+                                        </div>
+                                        <div class="product-price">
+                                            <p class="cost"></p>
+                                            <p class="sale-percent"></p>
+                                            <p class="sale-price">11,60 €</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkout-checkout">
+                                    <div class="checkout-product-quantity">
+                                        <span class="add-to-cart-asc">
+                                            <i class="ti-minus minus"></i>
+                                            <p>1</p>
+                                            <i class="ti-plus plus"></i>
+                                        </span>
+                                    </div>
+                                    <div class="checkout-total-price">
+                                        <p class="sale-price">
+                                            <strong>11,60 €</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="checkout-delete-product">
+                                    <img src="./assets/checkout-img/trash.png" alt="">
+                                </div>
+                            </div>
+                            <p class="continue-shopping">
+                                Continua lo shopping
+                            </p>
+                            <div class="checkout-shipping-item remove">
+                                <img src="./assets/content-img/icon-3.png" alt="">
+                                <p>Acquisti sicuri con Bonifico Bancario </p>
+                            </div>
+                            <div class="checkout-payment">
+                                <img src="./assets/footer-img/paypal.png" alt="" class="payment-menthod">
+                                <img src="./assets/footer-img/postepay.png" alt="" class="payment-menthod">
+                                <img src="./assets/footer-img/visa.png" alt="" class="payment-menthod">
+                                <img src="./assets/footer-img/maestro.png" alt="" class="payment-menthod">
+                                <img src="./assets/footer-img/mastercard.png" alt="" class="payment-menthod">
+                            </div>
+
+                        </div>
+                        <div class="checkout-info">
+                            <div class="checkout-info-wrapper">
+                                <div class="checkout-bill-container">
+                                    <div class="checkout-bill-title">
+                                        <p>Riepilogo ordine</p>
+                                    </div>
+                                    <div class="checkout-bill-content">
+                                        <div class="checkout-bill-desc">
+                                            <p>Totale prodotti</p>
+                                            <p>Spedizione</p>
+                                        </div>
+                                        <div class="checkout-bill-price">
+                                            <p>33,85 €</p>
+                                            <p>GRATUITA</p>
+                                        </div>
+                                    </div>
+                                    <div class="checkout-bill-total">
+                                        <div class="total-desc">
+                                            <p>Totale</p>
+                                        </div>
+                                        <div class="total-price">
+                                            <strong>33,85 €</strong>
+                                        </div>
+                                    </div>
+                                    <button class="btn-checkout">
+                                       <p> Vai alla cassa </p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="checkout-tab-shipping">
+                                <ul class="tab-bar">
+                                    <li class="main-nav-tabs">
+                                        Hai un codice sconto?
+                                    </li>
+                                    <ul class="sub-nav-tabs">
+                                        <li>
+                                            <div class="checkout-shipping-item">
+                                                <img src="./assets/content-img/icon-1.png" alt="">
+                                                <p>Spedizioni veloci consegna entro 48 ore </p>
+                                            </div>
+                                            <div class="checkout-shipping-item">
+                                                <img src="./assets/content-img/icon-2.png" alt="">
+                                                <p>Reso facile e gratuito entro 15 giorni </p>
+                                            </div>
+                                            <div class="checkout-shipping-item">
+                                                <img src="./assets/content-img/icon-3.png" alt="">
+                                                <p>Acquisti sicuri con Bonifico Bancario </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shipping-payment-mobile">
+                        <div class="checkout-payment">
+                            <img src="./assets/footer-img/paypal.png" alt="" class="payment-menthod">
+                            <img src="./assets/footer-img/postepay.png" alt="" class="payment-menthod">
+                            <img src="./assets/footer-img/visa.png" alt="" class="payment-menthod">
+                            <img src="./assets/footer-img/maestro.png" alt="" class="payment-menthod">
+                            <img src="./assets/footer-img/mastercard.png" alt="" class="payment-menthod">
+                        </div>
+                    </div>
+                    <div class="related-products">
+                        <h3>Potrebbero piacerti anche</h3>
+                        <div class="product-list">
+                            <div class="product-item">
+                                <img src="./assets/content-img/bestsalerimg/vel-20-collant.png" alt=""
+                                    class="product-img">
+                                <div class="product-summary">
+                                    <div class="product-description">
+                                        <div class="product-title">
+                                            <p>Collant Basic Velati</p>
+                                            <p>20 Denari</p>
+                                        </div>
+                                        <div class="product-price">
+                                            <p class="cost">12,60 €</p>
+                                            <p class="sale-percent">-12%</p>
+                                            <p class="sale-price">10,99 €</p>
+                                        </div>
+                                        <div class="product-quantity">
+                                            <p>6 colori </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <img src="./assets/content-img/bestsalerimg/icon-heart-blank.png" alt=""
+                                            class="icon">
+                                        <img src="./assets/content-img/bestsalerimg/icon-cart-blank.png" alt=""
+                                            class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <img src="./assets/content-img/bestsalerimg/pin-up-collant copy@4x.png " alt=""
+                                    class="product-img">
+                                <div class="product-summary">
+                                    <div class="product-description">
+                                        <div class="product-title">
+                                            <p>Collant Modellanti</p>
+                                            <p>Pin Up</p>
+                                        </div>
+                                        <div class="product-price">
+                                            <p class="cost"></p>
+                                            <p class="sale-percent"></p>
+                                            <p class="sale-price">11,60 €</p>
+                                        </div>
+                                        <div class="product-quantity">
+                                            <p>3 colori </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <img src="./assets/content-img/bestsalerimg/icon-heart-blank.png" alt=""
+                                            class="icon">
+                                        <img src="./assets/content-img/bestsalerimg/icon-cart-blank.png" alt=""
+                                            class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <img src="./assets/content-img/bestsalerimg/velour-50-collant.png" alt=""
+                                    class="product-img">
+                                <div class="product-summary">
+                                    <div class="product-description">
+                                        <div class="product-title">
+                                            <p>Velour Collant</p>
+                                            <p>50 Denari</p>
+                                        </div>
+                                        <div class="product-price">
+                                            <p class="cost"></p>
+                                            <p class="sale-percent"></p>
+                                            <p class="sale-price">14,80 €</p>
+                                        </div>
+                                        <div class="product-quantity">
+                                            <p>9 colori </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <img src="./assets/content-img/bestsalerimg/icon-heart-blank.png" alt=""
+                                            class="icon">
+                                        <img src="./assets/content-img/bestsalerimg/icon-cart-blank.png" alt=""
+                                            class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <img src="./assets/content-img/bestsalerimg/lucienne-collant.png" alt=""
+                                    class="product-img">
+                                <div class="product-summary">
+                                    <div class="product-description">
+                                        <div class="product-title">
+                                            <p>Lucienne Collant Lurex</p>
+                                            <p>20 Denari</p>
+                                        </div>
+                                        <div class="product-price">
+                                            <p class="cost"></p>
+                                            <p class="sale-percent"></p>
+                                            <p class="sale-price">26,60 €</p>
+                                        </div>
+                                        <div class="product-quantity">
+                                            <p>3 colori </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <img src="./assets/content-img/bestsalerimg/icont-heart-full.png" alt=""
+                                            class="icon">
+                                        <img src="./assets/content-img/bestsalerimg/icon-cart-blank.png" alt=""
+                                            class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

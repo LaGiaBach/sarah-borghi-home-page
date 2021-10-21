@@ -1,9 +1,12 @@
 // home page js
+
   var popupNewletter = $("#pop-up-new-letter");
   var popupBtn = $("#pop-up-button");
-  popupBtn.click(function () {
-    popupNewletter.toggleClass("active");
+  $("#pop-up-button").click(function () {
+    $("#pop-up-new-letter").toggleClass("active");
   });
+
+  
   // category
 
   var dropDownBtn = $("#dropdown");
@@ -24,9 +27,34 @@
     fillteBlock.slideUp("slow", function () {});
   });
   // status bar prodottom 
+  
   var mainNavTab = $(".main-nav-tabs");
   var subNavTab = $(".sub-nav-tabs");
-  mainNavTab.click(function(){
-    subNavTab.slideToggle("slow", function(){})
-    mainNavTab.toggleClass("active")
-  })
+  $.each(mainNavTab,  ((index, tab) => {
+    var subTab = subNavTab[index]
+    $(tab).click(function() {
+      $(this).toggleClass("active")
+      $(subTab).slideToggle("slow", function () {})
+
+    })
+  }))
+  
+
+
+
+
+  //   mainNavTab.click(function(){
+  //     subNavTab.slideToggle("slow", function(){})
+  //     mainNavTab.toggleClass("active")
+  // })
+  // mainNavTab.click(()=>{
+  //   mainNavTab.each((index,tab) => {
+  //     // $(tab).toggleClass("active");
+  //     // const subTab = subNavTab[index];
+  //     // console.log(subTab);
+  //     console.log(index);
+  //     console.log(tab);
+  //   })
+  // })
+
+  
