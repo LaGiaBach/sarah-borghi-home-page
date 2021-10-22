@@ -1,0 +1,135 @@
+@import "base.css";
+@import "style.css";
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+  .col {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  
+  .c-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .c-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  
+  .c-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .c-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .c-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  
+  .c-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  .c-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .c-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .c-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  
+  .c-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  
+  .c-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  
+  .c-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+.azienda-page-title h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+}
+.azienda-section{
+    /* gap: 0 40px; */
+    justify-content: center;
+    margin-bottom: 20px;
+   
+}
+.azienda-section:nth-child(2){
+    flex-direction: row-reverse;
+}
+.azienda-page-title{
+    margin: 20px 0 40px 0;
+}
+.azienda-section-img{
+    display: flex;
+    justify-content:flex-end;
+    align-self: center;
+    gap: 0 65px;
+}
+.azienda-section-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 0
+}
+.azienda-text-box p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.azienda-text-box strong{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+}
+.azienda-text-box p > strong{
+    font-size: inherit;
+    font-weight: 600;
+    line-height: inherit;
+}
+@import "base.css";
+@import "style.css";
+@media screen and (max-width: 720px) {
+    .azienda-section{
+        flex-direction: column;
+        gap: 15px 0;
+    }
+    .azienda-section-img,.azienda-section-text{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .azienda-section-img{
+        justify-content:center
+    }
+    .azienda-section-img img{
+        width: 100%;
+    }
+    .clear{
+        display: none; 
+    }
+}

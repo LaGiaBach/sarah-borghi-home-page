@@ -285,6 +285,14 @@ label.file::after{
         max-width: 100%;
         justify-content:center
     }
+    strong{
+        font-size: 13px;
+    }
+    p{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+    }
     /* .service-item-title:last-child > p{
         display: none;
     }
@@ -298,6 +306,7 @@ label.file::after{
     .service-item-title{
         align-items:center;
         gap: 20px 0;
+        text-align: center;
     }
     .service-contact-item:last-child {
         display: none;
@@ -344,6 +353,9 @@ label.file::after{
     .capcha-button{
         flex-direction: column;
         gap: 15px 0
+    }
+    .question{
+        justify-content:center
     }
     
 }
