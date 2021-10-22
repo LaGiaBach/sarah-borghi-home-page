@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/index-responsive.css">
+    <link rel="stylesheet" href="./assets/css/service.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e8bdc79361.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/font/themify-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <title>Service</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header"></div>
+        <div class="service-content">
+            <div class="container container-mobile">
+                <div class="page-title">
+                    <p>Home Page > Servizio Clienti</p>
+                </div>
+                <div class="service-page-title">
+                    <h2>Servizio Clienti</h2>
+                </div>
+                <div class="service-content-wrapper row">
+                    <!-- <div class="col c-1"></div> -->
+                    <div class="service-contact col c-4">
+                        <div class="service-contact-icon">
+                            <img src="./assets/service-img/icon-top.png" alt="">
+                            <p>Hai bisogno di aiuto?</p>
+                        </div>
+                        <div class="service-contact-item-wrapper">
+                            <div class="service-contact-item">
+                                <div class="service-item-title">
+                                    <p> Puoi chiamarci dal <strong>LUN-VEN dalle 9:00 alle 18:00</strong></p>
+                                    <span>
+                                        <img src="./assets/service-img/phone.png" alt="">
+                                        <p>+39 0376 77421</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="service-contact-item">
+                                <div class="service-item-title">
+                                    <p> Oppure consulta le <strong>FAQ</strong> </p>
+                                    <span>
+                                        <p>Vedi domande</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-form col c-7">
+                        <div class="service-form-title">
+                            <p>Oppure <strong>compila la form</strong> sottostante, verrai ricontattato al più presto
+                            </p>
+                        </div>
+                        <form action="">
+                            <div class="form-content">
+                                <div class="form-name top row">
+                                    <div class="form-left col c-5">
+                                        <label for="name">Nome</label>
+                                        <input type="text" placeholder="Inserisci nome" name="" id="">
+                                    </div>
+                                    <div class="form-right col c-5">
+                                        <label for="cogo">Cognome</label>
+                                        <input type="text" placeholder="Inserisci cognome" name="" id="cogo">
+                                    </div>
+                                </div>
+                                <div class="form-name second row">
+                                    <div class="form-left col c-5">
+                                        <label for="email">E-mail</label>
+                                        <input type="text" placeholder="Inserisci e-mail" name="" id="email">
+                                    </div>
+                                    <div class="form-right col c-5">
+                                        <label for="city">Recapito Telefonico (opzionale)</label>
+                                        <input type="text" placeholder="Inserisci numero telefonico" name="" id="city">
+                                    </div>
+                                </div>
+                                <p class="form-desc">
+                                    Inserire il numero telefonico al quale è possibile chiamare in caso di necessità
+                                    e chiarimenti ulteriori rispetto a quanto qui comunicato
+                                </p>
+                                <div class="form-name third row">
+                                    <div class="form-left col c-5">
+                                        <label for="company">Rif. Oridine</label>
+                                        <input type="text" placeholder="Codice Ordine" name="" id="company">
+                                    </div>
+                                    <div class="form-right col c-5">
+                                        <label for="select">Problematica</label>
+                                        <input type="text" placeholder="Seleziona" name="" class="select" id="select">
+                                    </div>
+                                </div>
+                                <div class="form-file row">
+                                    <div class="col c-11">
+                                        <label for="file">Allegati (opzionale)</label>
+                                        <input type="file" name="" id="file">
+                                        <label  class="file" for="file"></label>
+                                    </div>
+                                </div>
+                                <div class="form-text-area row">
+                                    <div class="col c-11">
+                                        <label for="text-area">Messaggio</label>
+                                        <textarea name="" id="text-area" cols="30" rows="10"></textarea>
+                                    </div>
+                                </div>
+                                <div class="privacy">
+                                    <input type="radio" name="" id="privacy"> 
+                                    <label for="privacy">Ho letto e accetto la <underline>Privacy Policy</underline></label>
+                                </div>
+                                <div class="capcha-button">
+                                    <div class="capcha-section">
+                                        <div class="captcha" style="background-color: beige;">
+                                            <div class="spinner">
+                                                <label>
+                                                    <input type="checkbox" onclick="$(this).attr('disabled','disabled');">
+                                                    <span class="checkmark"><span>&nbsp;</span></span>
+                                                </label>
+                                            </div>
+                                            <div class="capcha-text">
+                                                Non suno un robot
+                                            </div>
+                                            <div class="logo-capcha">
+                                                <img src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/" />
+                                                <p>reCAPTCHA</p>
+                                                <small>Privacy - Terms</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="service-btn">invia messaggio</button>
+                                </div>
+                                <div class="question">
+                                    <img src="./assets/service-img/question.png" alt="">
+                                    <p>Domande frequenti</p>
+                                </div>
+                                <div class="prodotto-status-bar">
+                                    <ul class="tab-bar">
+                                        <li class="main-nav-tabs">
+                                            Reso e Rimborso
+                                        </li>
+                                        <ul class="sub-nav-tabs">
+                                            <li>Attualmente accettiamo Paypal e la maggior parte delle carte di credito e di
+                                                debito, tr cui Visa, MasterCard, American Express, Discover, JCB e Diners
+                                                Club. Accettiamo anche il pagamento con Bonifico Bancario</li>
+                                        </ul>
+        
+                                        <li class="main-nav-tabs">
+                                            Guida alle taglie
+                                        </li>
+                                        <ul class="sub-nav-tabs">
+                                           
+                                        </ul>
+        
+                                        <li class="main-nav-tabs">
+                                            Il mio account
+                                        </li>
+                                        <ul class="sub-nav-tabs">
+                                            <li>Attualmente accettiamo Paypal e la maggior parte delle carte di credito e di
+                                                debito, tr cui Visa, MasterCard, American Express, Discover, JCB e Diners
+                                                Club. Accettiamo anche il pagamento con Bonifico Bancario</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+</body>
+
+</html>

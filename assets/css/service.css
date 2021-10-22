@@ -1,0 +1,349 @@
+@import "base.css";
+@import "style.css";
+.service-page-title h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+.col {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+.c-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+
+.c-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.c-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+.c-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+
+.c-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.c-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+.c-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+.c-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.c-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+
+.c-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+
+.c-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.service-page-title {
+  margin: 20px 0;
+}
+.service-content-wrapper {
+}
+.service-contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 90px;
+}
+.service-contact p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.service-contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0 10px;
+}
+.service-contact-icon p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.13636364px;
+}
+.service-contact-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px 0;
+}
+.service-contact-item .service-item-title span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 211px;
+  height: 45px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 22.5px;
+  cursor: pointer;
+}
+.service-contact-item:last-child .service-item-title span {
+  width: 186px;
+  height: 45px;
+}
+.service-item-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+.service-form {
+  margin-top: 28px;
+}
+.form-content input[type="text"] {
+  width: 100%;
+  height: 45px;
+  border-radius: 15px;
+  background: #eeeeee;
+  border: none;
+  padding: 0 10px;
+}
+.form-content label {
+  display: block;
+}
+p.form-desc {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18px;
+}
+.form-name {
+  gap: 0 51px;
+  margin: 20px 0;
+}
+.select {
+  position: relative;
+}
+.select::after {
+  content: "";
+  background: url(../category-img/drop-down-btn.png);
+  width: 30px;
+  height: 30px;
+}
+textarea {
+  width: 102%;
+  height: 106px;
+  border-radius: 15px;
+  background: #eeeeee;
+  border: none;
+}
+.form-file,
+.form-text-area {
+  margin: 20px 0;
+}
+.privacy {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+underline {
+  text-decoration: underline;
+}
+/* .capcha-button > .capcha-section{
+    background-color: 
+} */
+.capcha-button{
+    margin:20px 0 
+}
+.capcha-button {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0 60px;
+}
+.service-btn {
+  width: 350px;
+  height: 45px;
+  border-radius: 22.5px;
+  border: dashed 1px var(--primary-color);
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 15px;
+  text-align: center;
+}
+.prodotto-status-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .tab-bar {
+    list-style: none;
+  }
+  
+  .tab-bar > li {
+    display: block;
+    padding: 20px 0;
+    border-top: solid 1px #bfbfbf;
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.23076923px;
+  }
+  .tab-bar > li:last-child {
+    border-bottom: solid 1px #bfbfbf;
+  }
+  .tab-bar > li:after {
+    content: "";
+    background: url(../category-img/drop-down-btn.png) no-repeat;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-size: 12px;
+    position: absolute;
+    left: 90%;
+  }
+  .tab-bar > li.active:after {
+    transform: rotate(180deg);
+  }
+  .sub-nav-tabs {
+    list-style: none;
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .question{
+      display: flex;
+      align-items: center;
+      gap: 0 10px;
+  }
+  .question p{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.13636364px;
+  }
+input[type="file"]{
+    display: none;
+}
+label.file{
+    width: 100%;
+    height: 45px;
+    border-radius: 15px;
+    background: #eeeeee;
+    border: none;
+    padding: 0 10px;
+    position: relative;
+    cursor: pointer;
+}
+label.file::after{
+    content: "";
+    background: url(../service-img/upfile.png) no-repeat;
+    width: 24px;
+    height: 24px    ;
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@import "base.css";
+@import "style.css";
+@media screen and (max-width: 720px) {
+    .service-contact {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+        justify-content:center
+    }
+    /* .service-item-title:last-child > p{
+        display: none;
+    }
+    .service-item-title:last-child > span {
+        display: none;
+    } */
+    .service-contact-icon{
+        justify-content:center;
+        margin: 10px 0;
+    }
+    .service-item-title{
+        align-items:center;
+        gap: 20px 0;
+    }
+    .service-contact-item:last-child {
+        display: none;
+    }
+    .service-form {
+        margin-top: 28px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .service-form-title{
+        text-align:center
+    }
+    .form-content input[type="text"]{
+        width: 125%;
+    }
+    .top > .form-left{
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+    .top >.form-right{
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+    .form-left,.form-right{
+        margin: 10px 0;
+    }
+    .second > .form-left , .form-right{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .third > .form-left , .form-right{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .second input[type="text"]{
+        width: 90%;
+    }
+    .third input[type="text"]{
+        width: 90%;
+    }
+    label.file::after {
+        left: 90%;
+    }
+    .capcha-button{
+        flex-direction: column;
+        gap: 15px 0
+    }
+    
+}
