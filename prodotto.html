@@ -121,7 +121,8 @@
                                             <p>1</p>
                                             <i class="ti-plus plus"></i>
                                         </span>
-                                        <button class="add-to-cart-info-btn">Aggiungi al carrello</button>
+                                        <a href="checkout.html"><button class="add-to-cart-info-btn">Aggiungi al
+                                                carrello</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -334,6 +335,31 @@
         </div>
         <div id="footer"></div>
     </div>
+    <script>
+        const quantity = $(".add-to-cart-asc p");
+        const quantityUp = $(".add-to-cart-asc .plus")
+        const quantityDown = $(".add-to-cart-asc .minus")
+        let firstNum = 1
+       
+        quantityUp.click(function () {
+            let lastNum = firstNum 
+            firstNum = lastNum + 1
+            quantity.text(firstNum)
+            console.log(firstNum)
+
+        })
+        quantityDown.click(function () {
+            
+            let lastNum = firstNum 
+            firstNum = lastNum - 1
+            if(lastNum === 0 ){
+                firstNum = 0
+            }
+            quantity.text(firstNum)
+            console.log(firstNum)
+           
+        })
+    </script>
 </body>
 
 </html>

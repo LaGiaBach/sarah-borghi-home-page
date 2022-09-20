@@ -327,6 +327,29 @@
     </div>
    
     <!-- <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script> -->
+    <script>
+        const quantity = $(".add-to-cart-asc p");
+        const quantityUp = $(".add-to-cart-asc .plus")
+        const quantityDown = $(".add-to-cart-asc .minus")
+        let firstNum = 1
+       
+        quantityUp.click(function () {
+            firstNum = firstNum + 1
+            quantity.text(firstNum)
+            console.log(firstNum)
+
+        })
+        quantityDown.click(function () {
+            
+            firstNum = firstNum - 1
+            if(firstNum === 0 ){
+                firstNum = 0
+            }
+            quantity.text(firstNum)
+            console.log(firstNum)
+           
+        })
+    </script>
 </body>
 
 </html>
